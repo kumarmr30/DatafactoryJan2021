@@ -1,0 +1,35 @@
+{
+	"name": "SourceAzureDB",
+	"properties": {
+		"description": "SourceDB",
+		"linkedServiceName": {
+			"referenceName": "AzureSQLServer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "OrderID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CustomerID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "InsertedDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "orders"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
