@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "oldinsertDate",
+				"description": "Old Data value",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
